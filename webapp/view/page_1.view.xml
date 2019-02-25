@@ -1,0 +1,144 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns:f="sap.f" xmlns:variants="sap.ui.comp.variants" xmlns="sap.m" xmlns:filterbar="sap.ui.comp.filterbar" xmlns:core="sap.ui.core" controllerName="com.sap.build.standard.businessPartnerCustomerGroupAssignment.controller.page_1">
+	<f:DynamicPage headerExpanded="true" showFooter="false" class="sapUiSizeCompact">
+		<f:title>
+			<f:DynamicPageTitle>
+				<f:heading>
+					<variants:VariantManagement/>
+				</f:heading>
+				<f:actions>
+					<ToolbarSpacer/>
+					<Button icon="sap-icon://action" type="Transparent"/>
+				</f:actions>
+			</f:DynamicPageTitle>
+		</f:title>
+		<f:header>
+			<f:DynamicPageHeader pinnable="true">
+				<f:content>
+					<filterbar:FilterBar id="ListReportFilterBar" useToolbar="false" showGoOnFB="true" searchEnabled="true">
+						<filterbar:filterItems>
+							<filterbar:FilterItem label="Editing Statuses" name="Fiori_ListReport_ListReport_0-filterBars-Fiori_ListReport_FilterBar-1-filters-sap_ui_comp_filterbar_FilterItem-1489995636150---0">
+								<filterbar:control>
+									<ComboBox selectedKey="All" editable="true" enabled="true" visible="true" width="auto" valueState="None" maxWidth="100%">
+										<items>
+											<core:Item text="Item" enabled="true" key="Item"/>
+										</items>
+									</ComboBox>
+								</filterbar:control>
+							</filterbar:FilterItem>
+							<filterbar:FilterItem label="Role" name="Fiori_ListReport_ListReport_0-filterBars-Fiori_ListReport_FilterBar-1-filters-sap_ui_comp_filterbar_FilterItem-1550581438824---0">
+								<filterbar:control>
+									<Input type="Text" showValueHelp="true" enabled="true" visible="true" width="auto" valueHelpOnly="false" maxLength="0" valueHelpRequest="_onInputValueHelpRequest"/>
+								</filterbar:control>
+							</filterbar:FilterItem>
+							<filterbar:FilterItem label="Business Partner" name="Fiori_ListReport_ListReport_0-filterBars-Fiori_ListReport_FilterBar-1-filters-sap_ui_comp_filterbar_FilterItem-1550581747830---0">
+								<filterbar:control>
+									<Input type="Text" showValueHelp="true" enabled="true" visible="true" width="auto" valueHelpOnly="false" maxLength="0" valueHelpRequest="_onInputValueHelpRequest1"/>
+								</filterbar:control>
+							</filterbar:FilterItem>
+							<filterbar:FilterItem label="Last Name/Name1" name="Fiori_ListReport_ListReport_0-filterBars-Fiori_ListReport_FilterBar-1-filters-sap_ui_comp_filterbar_FilterItem-1550581782695---0">
+								<filterbar:control>
+									<Input type="Text" showValueHelp="true" enabled="true" visible="true" width="auto" valueHelpOnly="false" maxLength="0" valueHelpRequest="_onInputValueHelpRequest2"/>
+								</filterbar:control>
+							</filterbar:FilterItem>
+							<filterbar:FilterItem label="First Name/Name2" name="Fiori_ListReport_ListReport_0-filterBars-Fiori_ListReport_FilterBar-1-filters-sap_ui_comp_filterbar_FilterItem-1550581789896---0">
+								<filterbar:control>
+									<Input type="Text" showValueHelp="true" enabled="true" visible="true" width="auto" valueHelpOnly="false" maxLength="0" valueHelpRequest="_onInputValueHelpRequest3"/>
+								</filterbar:control>
+							</filterbar:FilterItem>
+							<filterbar:FilterItem label="Street" name="Fiori_ListReport_ListReport_0-filterBars-Fiori_ListReport_FilterBar-1-filters-sap_ui_comp_filterbar_FilterItem-1550581910362---0">
+								<filterbar:control>
+									<Input type="Text" showValueHelp="true" enabled="true" visible="true" width="auto" valueHelpOnly="false" maxLength="0" valueHelpRequest="_onInputValueHelpRequest4"/>
+								</filterbar:control>
+							</filterbar:FilterItem>
+							<filterbar:FilterItem label="City" name="Fiori_ListReport_ListReport_0-filterBars-Fiori_ListReport_FilterBar-1-filters-sap_ui_comp_filterbar_FilterItem-1550581810733---0">
+								<filterbar:control>
+									<Input type="Text" showValueHelp="true" enabled="true" visible="true" width="auto" valueHelpOnly="false" maxLength="0" valueHelpRequest="_onInputValueHelpRequest5"/>
+								</filterbar:control>
+							</filterbar:FilterItem>
+							<filterbar:FilterItem label="Country" name="Fiori_ListReport_ListReport_0-filterBars-Fiori_ListReport_FilterBar-1-filters-sap_ui_comp_filterbar_FilterItem-1550581819021---0">
+								<filterbar:control>
+									<Input type="Text" showValueHelp="true" enabled="true" visible="true" width="auto" valueHelpOnly="false" maxLength="0" valueHelpRequest="_onInputValueHelpRequest6"/>
+								</filterbar:control>
+							</filterbar:FilterItem>
+						</filterbar:filterItems>
+					</filterbar:FilterBar>
+				</f:content>
+			</f:DynamicPageHeader>
+		</f:header>
+		<f:content>
+			<!--VBox fitContainer="true" items="{path:'/YY1_CustomerGroup',parameters:{select:'Customer,CityName,PostalCode,Country'}}" -->
+				<!--items-->
+					<Table id="idProductsTable" width="100%" growing="true" growingScrollToLoad="true" growingThreshold="25" mode="None" inset="false" items="{path: '/YY1_CustomerGroup'}">
+						<headerToolbar>
+							<OverflowToolbar design="Transparent">
+								<content>
+									<Title textAlign="Begin" text="Customers"/>
+									<Title text="(1)"/>
+									<ToolbarSpacer/>
+									<Button icon="sap-icon://action-settings" type="Transparent">
+										<layoutData>
+											<OverflowToolbarLayoutData moveToOverflow="true"/>
+										</layoutData>
+									</Button>
+								</content>
+							</OverflowToolbar>
+						</headerToolbar>
+						<columns>
+							<Column width="auto" minScreenWidth="Tablet" demandPopin="true">
+								<header>
+									<Text text="Business Partner" width="auto"/>
+								</header>
+							</Column>
+							<Column width="auto" minScreenWidth="Tablet" demandPopin="true">
+								<header>
+									<Text text="Street" width="auto"/>
+								</header>
+							</Column>
+							<Column width="auto" minScreenWidth="Desktop" demandPopin="true">
+								<header>
+									<Text text="City" width="auto"/>
+								</header>
+							</Column>
+							<Column width="auto" minScreenWidth="Desktop" demandPopin="true">
+								<header>
+									<Text text="Postal Code" width="auto"/>
+								</header>
+							</Column>
+							<Column width="auto" minScreenWidth="Desktop" demandPopin="true">
+								<header>
+									<Text text="Counrty" width="auto"/>
+								</header>
+							</Column>
+							<Column width="auto" minScreenWidth="Desktop" demandPopin="true">
+								<header>
+									<Text text="Role" width="auto"/>
+								</header>
+							</Column>
+						</columns>
+						<items>
+							<ColumnListItem type="Navigation">
+								<cells>
+									<ObjectStatus text="{Customer}"/>
+									<ObjectStatus text="{StreetName}"/>
+									<ObjectStatus text="{CityName}"/>
+									<ObjectStatus text="{PostalCode}"/>
+									<ObjectStatus text="{Country}"/>
+									<ObjectStatus text="{Customer}"/>
+								</cells>
+							</ColumnListItem>
+						</items>
+					</Table>
+				<!--/items-->
+			<!--/VBox -->
+		</f:content>
+		<f:footer>
+			<OverflowToolbar>
+				<content>
+					<ToolbarSpacer/>
+					<Button text="Save" type="Emphasized" iconFirst="true" width="auto" enabled="true" visible="true" iconDensityAware="false"/>
+					<Button text="Cancel" type="Default" iconFirst="true" width="auto" enabled="true" visible="true" iconDensityAware="false"/>
+				</content>
+			</OverflowToolbar>
+		</f:footer>
+	</f:DynamicPage>
+</mvc:View>

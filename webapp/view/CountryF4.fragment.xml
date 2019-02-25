@@ -1,0 +1,10 @@
+<core:FragmentDefinition xmlns:core="sap.ui.core"
+	controllerName="com.sap.build.standard.businessPartnerCustomerGroupAssignment.controller.CountryF4" xmlns="sap.m">
+	<SelectDialog id="sap_m_SelectDialog_3" title="Country" growingThreshold="20" class="sapUiPopupWithPadding"
+		items="{path: '/YY1_CustomerGroup'}" search="_handleValueHelpSearch" confirm="_handleValueHelpClose" cancel="_handleValueHelpClose"
+		liveChange="_onSelectDialogLiveChange">
+		<items>
+			<StandardListItem icon="" title="{Country}" description="" info="" iconInset="false" iconDensityAware="false"/>
+		</items>
+	</SelectDialog>
+</core:FragmentDefinition>

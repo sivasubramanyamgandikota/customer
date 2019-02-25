@@ -1,0 +1,43 @@
+{
+    "dataBinding": {
+        "/webapp/view/page_1.view.xml": {
+            "entitySet": ""
+        }, 
+        "/webapp/view/page_3.view.xml": {
+            "entitySet": ""
+        }, 
+        "/webapp/view/page_2.view.xml": {
+            "entitySet": ""
+        }, 
+        "/webapp/view/CityF4.view.xml": {
+            "entitySet": ""
+        }, 
+        "/webapp/view/StreetF4.view.xml": {
+            "entitySet": ""
+        }, 
+        "/webapp/view/CountryF4.view.xml": {
+            "entitySet": ""
+        }, 
+        "/webapp/view/Name2F4.view.xml": {
+            "entitySet": ""
+        }, 
+        "/webapp/view/Name1F4.view.xml": {
+            "entitySet": ""
+        }, 
+        "/webapp/view/BpF4.view.xml": {
+            "entitySet": ""
+        }, 
+        "/webapp/view/popover_4.view.xml": {
+            "entitySet": ""
+        }, 
+        "/webapp/view/popover_3.view.xml": {
+            "entitySet": ""
+        }, 
+        "/webapp/view/popover_2.view.xml": {
+            "entitySet": ""
+        }, 
+        "/webapp/view/popover_1.view.xml": {
+            "entitySet": ""
+        } 
+    }
+}

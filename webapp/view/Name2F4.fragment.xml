@@ -1,0 +1,7 @@
+<core:FragmentDefinition xmlns:core="sap.ui.core" controllerName="com.sap.build.standard.businessPartnerCustomerGroupAssignment.controller.Name2F4" xmlns="sap.m">
+    <SelectDialog id="sap_m_SelectDialog_2" title="Last Nmae/Name2" growingThreshold="20" liveChange="_onSelectDialogLiveChange">
+        <items>
+            <StandardListItem icon="" title="Title 1" description="" info="" infoState="None"/>
+        </items>
+    </SelectDialog>
+</core:FragmentDefinition>

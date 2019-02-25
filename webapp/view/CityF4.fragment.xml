@@ -1,0 +1,7 @@
+<core:FragmentDefinition xmlns:core="sap.ui.core" controllerName="com.sap.build.standard.businessPartnerCustomerGroupAssignment.controller.CityF4" xmlns="sap.m">
+    <SelectDialog id="sap_m_SelectDialog_5" title="City" items="{path: '/YY1_CustomerGroup'}" growingThreshold="20" liveChange="_onSelectDialogLiveChange">
+        <items>
+            <StandardListItem title="{CityName}" description="" info="" iconInset="false" iconDensityAware="false"/>
+        </items>
+    </SelectDialog>
+</core:FragmentDefinition>
